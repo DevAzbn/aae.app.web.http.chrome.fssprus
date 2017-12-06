@@ -1,0 +1,11 @@
+{
+	"chrome" : {
+		"port" : 17003,
+		"enableExtensions" : true,
+		"flags" : [
+			"--headless",
+			"--disable-gpu",
+			"--fromSurface"
+		]
+	}
+}
