@@ -56,9 +56,37 @@ let runTask = async function() {
 		//await browser.close();
 	});
 	
+	//http://fssprus.ru/torgi/action/city?data=5700000000000
 	//http://fssprus.ru/torgi/ajax_search/?torgi[bidnumber]=&torgi[status]=5&torgi[torgpublishdate][from]=&torgi[torgpublishdate][to]=&torgi[propname]=&torgi[region]=5700000000000&torgi[city]=&torgi[startprice][from]=&torgi[startprice][to]=&torgi[torgexpiredate][from]=&torgi[torgexpiredate][to]=
 	//http://fssprus.ru/torgi
-
+	/*
+	Accept:*<убрать>/*
+	Accept-Encoding:gzip, deflate
+	Accept-Language:ru,en;q=0.8
+	Cache-Control:no-cache
+	Connection:keep-alive
+	Cookie:_ym_uid=15121217251005127179; _ym_isad=2; PHPSESSID=u6k1u4m540r1q8v1fren2vv7f0; _ym_visorc_9346069=w; sputnik_session=1512623870967|3
+	DNT:1
+	Host:fssprus.ru
+	Pragma:no-cache
+	Referer:http://fssprus.ru/torgi/
+	User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 YaBrowser/17.10.1.1204 Yowser/2.5 Safari/537.36
+	X-Requested-With:XMLHttpRequest
+	
+	Accept:*<убрать>/*
+	Accept-Encoding:gzip, deflate
+	Accept-Language:ru,en;q=0.8
+	Cache-Control:no-cache
+	Connection:keep-alive
+	Cookie:_ym_uid=15121217251005127179; _ym_isad=2; PHPSESSID=u6k1u4m540r1q8v1fren2vv7f0; _ym_visorc_9346069=w; sputnik_session=1512623870967|3
+	DNT:1
+	Host:fssprus.ru
+	Pragma:no-cache
+	Referer:http://fssprus.ru/torgi/
+	User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 YaBrowser/17.10.1.1204 Yowser/2.5 Safari/537.36
+	X-Requested-With:XMLHttpRequest
+	*/
+	
 	await page.goto('http://fssprus.ru/torgi', {
 		waitUntil : [
 			'domcontentloaded',
